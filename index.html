@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="TheMainKontejner">
+      <div id="ThePlayGroundKontejner">
+        <div id="drzacIgraca">
+          <div id="humanPlayer" class="igraci">
+            <div>You:</div>
+            <div id="slikaZaIgraca" class="slikaOdabira"></div>
+            <div id="maliDugmici">
+              <div
+                onclick="glavnaFunkcija(1)"
+                onmouseover="funkcija1()"
+                onmouseleave="funkcija11()"
+                id="kamen"
+              >
+                ✊
+              </div>
+              <div
+                onclick="glavnaFunkcija(2)"
+                onmouseover="funkcija2()"
+                onmouseleave="funkcija22()"
+                id="papir"
+              >
+                ✋
+              </div>
+              <div
+                onclick="glavnaFunkcija(3)"
+                onmouseover="funkcija3()"
+                onmouseleave="funkcija33()"
+                id="makaze"
+              >
+                ✌️
+              </div>
+            </div>
+          </div>
+          <div id="opcije">
+            <span onclick="resetuj()" id="refres">↻</span>
+          </div>
+          <div id="AIPlayer" class="igraci">
+            <div>Computer:</div>
+            <div id="slikaZaKompijutera" class="slikaOdabira"></div>
+            <div id="maliDugmici">
+              <div id="rock">✊</div>
+              <div id="paper">✋</div>
+              <div id="scissors">✌️</div>
+            </div>
+          </div>
+        </div>
+        <div id="Rezultati">
+          <div class="rez"><span id="youu">0</span></div>
+          <div class="rez">Ties:<span id="tiee">0</span></div>
+          <div class="rez"><span id="compp">0</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
