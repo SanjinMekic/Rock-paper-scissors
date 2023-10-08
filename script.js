@@ -11,6 +11,8 @@ function glavnaFunkcija(m) {
   if (m == 1) {
     document.getElementById("slikaZaIgraca").style.backgroundImage =
       "url(kamen.jpg)";
+    var zvuk = new Audio("kamen.mp3");
+    zvuk.play();
     if (randomBroj == 1) {
       document.getElementById("slikaZaKompijutera").style.backgroundImage =
         "url(rock.jpg)";
@@ -51,6 +53,8 @@ function glavnaFunkcija(m) {
   } else if (m == 2) {
     document.getElementById("slikaZaIgraca").style.backgroundImage =
       "url(papir.jpg)";
+    var zvuk = new Audio("papir.wav");
+    zvuk.play();
     if (randomBroj == 1) {
       document.getElementById("slikaZaKompijutera").style.backgroundImage =
         "url(rock.jpg)";
@@ -91,6 +95,8 @@ function glavnaFunkcija(m) {
   } else if (m == 3) {
     document.getElementById("slikaZaIgraca").style.backgroundImage =
       "url(makaze.jpg)";
+    var zvuk = new Audio("makaze.mp3");
+    zvuk.play();
     if (randomBroj == 1) {
       document.getElementById("slikaZaKompijutera").style.backgroundImage =
         "url(rock.jpg)";
@@ -143,8 +149,6 @@ function resetuj() {
 function funkcija1() {
   document.getElementById("slikaZaIgraca").style.backgroundImage =
     "url(kamen.jpg)";
-  var zvuk = new Audio("kamen.mp3");
-  zvuk.play();
 }
 
 function funkcija11() {
@@ -161,8 +165,6 @@ function funkcija11() {
 function funkcija2() {
   document.getElementById("slikaZaIgraca").style.backgroundImage =
     "url(papir.jpg)";
-  var zvuk = new Audio("papir.wav");
-  zvuk.play();
 }
 
 function funkcija22() {
@@ -179,8 +181,6 @@ function funkcija22() {
 function funkcija3() {
   document.getElementById("slikaZaIgraca").style.backgroundImage =
     "url(makaze.jpg)";
-  var zvuk = new Audio("makaze.mp3");
-  zvuk.play();
 }
 
 function funkcija33() {
